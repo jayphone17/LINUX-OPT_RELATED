@@ -10,6 +10,7 @@
 
 ```
 conda info -e 
+conda env list
 ```
 
 创建conda新环境：
@@ -188,7 +189,6 @@ $ make
 
 
 ## Errors & Solve
-
 
 
 
