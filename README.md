@@ -28,25 +28,20 @@ conda remove -n xxx --all
 重命名conda环境：
 
 ```bash
-conda create -n tf --clone rcnn
-Source:      /anaconda3/envs/aaa
-Destination: /anaconda3/envs/bbb
-Packages: 37
-Files: 8463
-conda remove -n rcnn --all
-conda info -e
-# conda environments:
-#
-crawl                    /anaconda3/envs/crawl
-flask                    /anaconda3/envs/flask
-bbb                       /anaconda3/envs/bbb
-root                  *  /anaconda3
+conda create --name B --clone A
+conda remove --name A --all
 ```
 
 激活/进入环境：
 
 ```
 conda activate xxx
+```
+
+conda查看所有源：
+
+```
+conda config --show-sources
 ```
 
 conda删除所有源
@@ -123,13 +118,18 @@ pip uninstall torch
 
 
 
-## MMDetection
+## MMDetection相关
 
 自动安装：
 
 ```
 pip install openmim
+or：
+pip install -i https://pypi.douban.com/simple --trusted-host pypi.douban.com openmim
+
 mim install mmdet
+or：
+mim install mmdetection -f https://github.com.cnpmjs.org/open-mmlab/mmdetection.git
 ```
 
 手动/mccv-full安装：
@@ -191,6 +191,12 @@ python demo/xxx.py demo/demo.jpg configs/faster_rcnn/faster_rcnn_r50_fpn_1x_coco
 ```
 nvidia-smi
 ```
+
+
+
+## pip相关
+
+
 
 
 
