@@ -19,6 +19,30 @@ conda env list
 conda create -n xxx python=3.7 -y
 ```
 
+删除conda环境：
+
+```csharp
+conda remove -n xxx --all
+```
+
+重命名conda环境：
+
+```bash
+conda create -n tf --clone rcnn
+Source:      /anaconda3/envs/aaa
+Destination: /anaconda3/envs/bbb
+Packages: 37
+Files: 8463
+conda remove -n rcnn --all
+conda info -e
+# conda environments:
+#
+crawl                    /anaconda3/envs/crawl
+flask                    /anaconda3/envs/flask
+bbb                       /anaconda3/envs/bbb
+root                  *  /anaconda3
+```
+
 激活/进入环境：
 
 ```
