@@ -72,8 +72,6 @@ conda config --add channels https://mirrors.bfsu.edu.cn/anaconda/pkgs/main
 conda config --add channels https://mirrors.bfsu.edu.cn/anaconda/pkgs/free
 ```
 
-
-
 清华
 
 ```
@@ -91,6 +89,13 @@ conda config --add channels https://mirrors.ustc.edu.cn/anaconda/cloud/conda-for
 conda config --add channels https://mirrors.ustc.edu.cn/anaconda/cloud/msys2/
 conda config --add channels https://mirrors.ustc.edu.cn/anaconda/cloud/bioconda/
 conda config --add channels https://mirrors.ustc.edu.cn/anaconda/cloud/menpo/
+```
+
+清理conda未使用缓存：
+
+```
+conda clean -p
+conda clean -a
 ```
 
 
@@ -214,6 +219,33 @@ $ mkdir build
 $ cd build
 $ cmake ..
 $ make
+```
+
+
+
+# LabelMe相关
+
+```
+labelme  # 打开labelme软件
+
+labelme xxx.jpg  # 指定图像文件
+labelme xxx.jpg -O xxx.json  # 保存后关闭labelme
+labelme xxx.jpg --nodata  # JSON文件不包含图像数据，而包含图像的相对路径
+labelme xxx.jpg \
+  --labels highland_6539_self_stick_notes,mead_index_cards,kong_air_dog_squeakair_tennis_ball  # 指定 label list
+
+labelme data_annotated/  # 指定图像文件夹
+labelme data_annotated/ --labels labels.txt  # 使用文件指定 label list
+```
+
+
+
+```
+--flags： comma separated list of flags 或者 file containing flags
+--labels：comma separated list of labels 或者 file containing labels
+--nodata：stop storing image data to JSON file
+--nosortlabels：stop sorting labels
+--output：指定输出文件夹
 ```
 
 
