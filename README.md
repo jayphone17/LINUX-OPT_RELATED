@@ -250,6 +250,19 @@ labelme data_annotated/ --labels labels.txt  # 使用文件指定 label list
 
 
 
+```
+1. labelme_draw_json：
+   使用该命令可以快速查看JSON格式的标注。
+2. labelme_json_to_dataset：
+   使用该命令可以将JSON文件转为一组图像和标签文本文件。
+3. labelme_draw_label_png：
+   将label文本文件以图例的形式绘制到PNG格式的标签上，并显示出来。
+```
+
+
+
+
+
 ## Errors & Solve
 
 
