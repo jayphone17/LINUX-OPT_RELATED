@@ -319,3 +319,26 @@ https://github.com/philferriere/cocoapi
 ```
 链接：https://pan.baidu.com/s/19F4YurwwZ5A9WF5txzMZoQ 提取码：ka7q
 ```
+
+安装完毕后：
+
+```
+pip install git+https://github.com/philferriere/cocoapi.git#subdirectory=PythonAPI
+```
+
+提示：
+
+```
+Collecting git+https://github.com/philferriere/cocoapi.git#subdirectory=PythonAPI
+  Cloning https://github.com/philferriere/cocoapi.git to c:\users\jayphonelin\appdata\local\temp\pip-req-build-_q375vqo
+  Running command git clone -q https://github.com/philferriere/cocoapi.git 'C:\Users\JayphoneLin\AppData\Local\Temp\pip-req-build-_q375vqo'
+  Resolved https://github.com/philferriere/cocoapi.git to commit 2929bd2ef6b451054755dfd7ceb09278f935f7ad
+Building wheels for collected packages: pycocotools
+  Building wheel for pycocotools (setup.py) ... done
+  Created wheel for pycocotools: filename=pycocotools-2.0-cp38-cp38-win_amd64.whl size=77094 sha256=3bfc70c456436da29848abb45ef49b2ec842426543f74a40bf85e61411b8b7f3
+  Stored in directory: C:\Users\JayphoneLin\AppData\Local\Temp\pip-ephem-wheel-cache-ir1wzooi\wheels\bd\1c\0d\8c82e1b9bc855b82e1eb53eadea4459efe171d2daf5a222701
+Successfully built pycocotools
+Installing collected packages: pycocotools
+Successfully installed pycocotools-2.0
+```
+
