@@ -294,15 +294,15 @@ github上一位大佬制作了windows版本的：
 https://github.com/philferriere/cocoapi
 ```
 
-<img src="/pics\image-20220106191534448.png" alt="image-20220106191534448" style="zoom:50%;" />
+<img src="./pics/image-20220106191534448.png" style="zoom:50%;" />
 
 并且需要Visual C++ 2015 build tools 或者以上
 
-<img src="/pics\image-20220106191618625.png" alt="image-20220106191618625" style="zoom:50%;" />
+<img src="./pics/image-20220106191618625.png" style="zoom:50%;" />
 
 并且选择默认选项
 
-<img src="/pics\image-20220106191737895.png" alt="image-20220106191737895" style="zoom:50%;" />
+<img src="./pics/image-20220106191737895.png" style="zoom:50%;" />
 
 由于官网Visual C++ 2015 build tools 离线安装的问题涉及到与开发编码有关
 
@@ -312,7 +312,7 @@ https://github.com/philferriere/cocoapi
 
 所以看到CSDN上有一个大佬把所有包收集好了，打包成ISO，直接下载然后exe安装就可以了
 
-<img src="/pics\image-20220106191920947.png" alt="image-20220106191920947" style="zoom: 67%;" />
+<img src="./pics/image-20220106191920947.png" style="zoom: 67%;" />
 
 度盘：
 
