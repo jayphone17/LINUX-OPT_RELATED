@@ -265,5 +265,57 @@ labelme data_annotated/ --labels labels.txt  # 使用文件指定 label list
 
 ## Errors & Solve
 
+手动安装pycocotools：
 
+直接使用pip安装
 
+```
+pip install pycocotools
+```
+
+显示：
+
+```
+Failed to build pycocotools
+Installing collected packages: pycocotools
+    Running setup.py install for pycocotools ... error
+```
+
+提示：
+
+```
+error: Microsoft Visual C++ 14.0 or greater is required. Get it with "Microsoft C++ Build Tools": https://visualstudio.microsoft.com/visual-cpp-build-tools/
+```
+
+原来pycocotools作者表示不支持windows
+github上一位大佬制作了windows版本的：
+
+```
+https://github.com/philferriere/cocoapi
+```
+
+<img src="C:\Users\JayphoneLin\AppData\Roaming\Typora\typora-user-images\image-20220106191534448.png" alt="image-20220106191534448" style="zoom:50%;" />
+
+并且需要Visual C++ 2015 build tools 或者以上
+
+<img src="C:\Users\JayphoneLin\AppData\Roaming\Typora\typora-user-images\image-20220106191618625.png" alt="image-20220106191618625" style="zoom:50%;" />
+
+并且选择默认选项
+
+<img src="C:\Users\JayphoneLin\AppData\Roaming\Typora\typora-user-images\image-20220106191737895.png" alt="image-20220106191737895" style="zoom:50%;" />
+
+由于官网Visual C++ 2015 build tools 离线安装的问题涉及到与开发编码有关
+
+会提示包损失或者数据损失
+
+但是看到有的人开全局梯子可以解决，but it didn't work for me
+
+所以看到CSDN上有一个大佬把所有包收集好了，打包成ISO，直接下载然后exe安装就可以了
+
+<img src="C:\Users\JayphoneLin\AppData\Roaming\Typora\typora-user-images\image-20220106191920947.png" alt="image-20220106191920947" style="zoom: 67%;" />
+
+度盘：
+
+```
+链接：https://pan.baidu.com/s/19F4YurwwZ5A9WF5txzMZoQ 提取码：ka7q
+```
